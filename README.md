@@ -68,11 +68,11 @@ System wide deployment requires three steps:
 
     topology.metrics.consumer.register:
       - class: "com.endgame.storm.metrics.statsd.StatsdMetricConsumer"
-         parallelism.hint: 2
-         argument:
-           metrics.statsd.host: "statsd.server.mydomain.com"
-           metrics.statsd.port: 8125
-           metrics.statsd.prefix: "storm.metrics."
+        parallelism.hint: 2
+        argument:
+          metrics.statsd.host: "statsd.server.mydomain.com"
+          metrics.statsd.port: 8125
+          metrics.statsd.prefix: "storm.metrics."
 
 #### 2. Install the `storm-metrics-statsd` and `java-statsd-client` JARs into `$STORM_HOME/lib/` ON EACH STORM NODE.
 
