@@ -89,7 +89,7 @@ public class StatsdMetricConsumer implements IMetricsConsumer {
 	}
 
 	String clean(String s) {
-		return s.replace('.', '_').replace('/', '_');
+		return s.replace('.', '_').replace('/', '_').replace(':', '_');
 	}
 
 	@Override
