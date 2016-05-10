@@ -4,7 +4,7 @@ storm-metrics-statsd is a module for [Storm](http://storm-project.net/) that ena
 
 ## Building/Installation
 
-    git clone https://github.com/endgameinc/storm-metrics-statsd.git
+    git clone https://github.com/platinummonkey/storm-metrics-statsd.git
     cd storm-metrics-statsd
     mvn compile package install
 
@@ -20,15 +20,15 @@ This module can be used in two ways:
 Add this as a dependency to your `pom.xml`
 
     <dependency>
-      <groupId>com.endgame</groupId>
+      <groupId>com.accelerate-experience</groupId>
       <artifactId>storm-metrics-statsd</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
+      <version>1.0.0</version>
     </dependency>
 
 Configure the `StatsdMetricConsumer` when building your topology.  The example below is
-based on the [storm-starter](https://github.com/nathanmarz/storm-starter) [ExclamationTopology](https://github.com/nathanmarz/storm-starter/blob/master/src/jvm/storm/starter/ExclamationTopology.java).
+based on the [storm-starter](https://github.com/apache/storm-starter) [ExclamationTopology](https://github.com/apache/storm-starter/blob/master/src/jvm/storm/starter/ExclamationTopology.java).
 
-    import com.endgame.storm.metrics.statsd.StatsdMetricConsumer;
+    import com.accelerate_experience.storm.metrics.statsd.StatsdMetricConsumer;
 
     ...
 
@@ -67,7 +67,7 @@ System wide deployment requires three steps:
 #### 1. Add this section to your `$STORM_HOME/conf/storm.yaml`.  
 
     topology.metrics.consumer.register:
-      - class: "com.endgame.storm.metrics.statsd.StatsdMetricConsumer"
+      - class: "com.accelerate_experience.storm.metrics.statsd.StatsdMetricConsumer"
         parallelism.hint: 2
         argument:
           metrics.statsd.host: "statsd.server.mydomain.com"
@@ -95,13 +95,6 @@ This will be useful if you use versioned topology names (.e.g. appending a times
 
 ## License
 
-storm-metrics-statsd
-        
-Copyright 2014 [Endgame, Inc.](http://www.endgame.com/)
-
-![Endgame, Inc.](http://www.endgame.com/images/logo.svg)
-      
-
         Licensed under the Apache License, Version 2.0 (the "License"); you may
         not use this file except in compliance with the License. You may obtain
         a copy of the License at
@@ -115,7 +108,4 @@ Copyright 2014 [Endgame, Inc.](http://www.endgame.com/)
         specific language governing permissions and limitations
         under the License.
 
-## Author
-
-[Jason Trost](https://github.com/jt6211/) ([@jason_trost](https://twitter.com/jason_trost))
 

@@ -20,6 +20,10 @@
 
     <developers>
         <developer>
+            <id>jt6211</id>
+            <name>Jason Trost</name>
+        </developer>
+        <developer>
             <id>platinummonkey</id>
             <name>Cody Lee</name>
             <email>codylee@accelerate-experience.com</email>
