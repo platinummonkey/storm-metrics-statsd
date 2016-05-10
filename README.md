@@ -1,5 +1,7 @@
 # Storm Metrics Statsd
 
+[![Build Status](https://travis-ci.org/platinummonkey/storm-metrics-statsd.svg?branch=master)](https://travis-ci.org/platinummonkey/storm-metrics-statsd)
+
 storm-metrics-statsd is a module for [Storm](http://storm-project.net/) that enables metrics collection and reporting to [statsd](https://github.com/etsy/statsd/).
 
 ## Building/Installation
