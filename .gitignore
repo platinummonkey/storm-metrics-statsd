@@ -1,8 +1,19 @@
-/target
-*.class
-
-.project
-.classpath
-
-*.iml
+# Intellij
 .idea/
+*.iml
+*.iws
+settings-priv.xml
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Mac
+.DS_Store
+
+# Maven
+logs/
+target/
+dist/
+bin/
