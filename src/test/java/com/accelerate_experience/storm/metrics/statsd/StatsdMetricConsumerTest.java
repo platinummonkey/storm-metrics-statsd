@@ -118,12 +118,12 @@ public class StatsdMetricConsumerTest extends TestCase {
         // they should not show up here
 
         List<Metric> expected = ImmutableList.<Metric>of(
-            new Metric("host1.6701.myBolt7.my_int", 57),
-            new Metric("host1.6701.myBolt7.my_long", 57),
-            new Metric("host1.6701.myBolt7.my_float", 222),
-            new Metric("host1.6701.myBolt7.my_double", 56),
-            new Metric("host1.6701.myBolt7.points.count", 123),
-            new Metric("host1.6701.myBolt7.points.time", 2342234)
+            new Metric("myBolt7.my_int", 57),
+            new Metric("myBolt7.my_long", 57),
+            new Metric("myBolt7.my_float", 222),
+            new Metric("myBolt7.my_double", 56),
+            new Metric("myBolt7.points.count", 123),
+            new Metric("myBolt7.points.time", 2342234)
         );
 
         assertEquals(expected,
