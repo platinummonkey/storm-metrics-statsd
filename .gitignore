@@ -3,6 +3,7 @@
 *.iml
 *.iws
 settings-priv.xml
+notes.txt
 
 # Eclipse
 .classpath
